@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  border: red 2px solid;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "d h"
+    "d b";
+}
+/* ---------------------------------------Dashboard--------------- */
+.dashboard {
+  grid-area: d;
+  background-color: aqua;
+  display: grid;
+  grid-template-rows: 0.4fr 1.5fr 2fr;
+  grid-template-areas: "logo-title" "nav1" "nav2";
+  color: white;
+}
+/* ---------------------------------------logo and title--------------- */
+.logoAndTitle {
+  grid-area: logo-title;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 60px;
+}
+
+.dashboard-title {
+  font-size: 20px;
+  padding-bottom: 4px;
+}
+
+/* ---------------------------------------logo and title finshed--------------- */
+
+/* ---------------------------------------nav 1--------------- */
+.nav1 {
+  grid-area: nav1;
+  background-color: rgb(87, 0, 248);
+  display: flex;
+  flex-direction: column;
+}
+
+.home {
+}
+.profile {
+}
+.messages {
+}
+
+.nav1 > * {
+  flex-grow: 1;
+}
+
+/* ---------------------------------------nav 2--------------- */
+.nav2 {
+  grid-area: nav2;
+  background-color: burlywood;
+}
+
+/* ---------------------------------------Dashboard--------------- */
+.header {
+  grid-area: h;
+  background-color: antiquewhite;
+}
+
+.body {
+  grid-area: b;
+  background-color: grey;
+}
