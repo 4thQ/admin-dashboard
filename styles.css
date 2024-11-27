@@ -26,7 +26,7 @@
 /* ---------------------------------------logo and title--------------- */
 .logoAndTitle {
   grid-area: logo-title;
-  background-color: brown;
+  /* background-color: brown; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +44,7 @@
 /* ---------------------------------------nav 1--------------- */
 .nav1 {
   grid-area: nav1;
-  background-color: rgb(179, 149, 235);
+  /* background-color: rgb(179, 149, 235); */
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -61,7 +61,7 @@
 /* ---------------------------------------nav 2--------------- */
 .nav2 {
   grid-area: nav2;
-  background-color: burlywood;
+  /* background-color: burlywood; */
   display: flex;
   flex-direction: column;
   padding: 20px;
