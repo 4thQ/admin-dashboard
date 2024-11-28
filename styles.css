@@ -78,12 +78,149 @@
   padding-top: 30px;
 }
 /* ---------------------------------------Dashboard--------------- */
+/* ---------------------------------------Header--------------- */
+
+/* ---------------------------------------Header1--------------- */
 .header {
   grid-area: h;
   background-color: antiquewhite;
+  display: grid;
+  grid-template-rows: 0.6fr 1fr;
 }
 
+.header1 {
+  background-color: brown;
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 0.5fr 0.7fr 1fr;
+  grid-template-areas: "search-icon search-bar notification-icon display-picture user-name";
+}
+
+.search-icon {
+  grid-area: search-icon;
+  background-color: rgb(211, 155, 155);
+  justify-self: end;
+  align-self: center;
+}
+.search-bar {
+  grid-area: search-bar;
+  background-color: rgb(42, 140, 165);
+  display: flex;
+}
+
+.bar {
+  background-color: grey;
+  border-radius: 20px;
+  border: none;
+  align-self: center;
+  width: 100%;
+  height: 40%;
+  margin: 10px;
+}
+.notification-icon {
+  grid-area: notification-icon;
+  background-color: rgb(106, 42, 165);
+  align-self: center;
+  justify-self: end;
+}
+.display-picture {
+  grid-area: display-picture;
+  background-color: rgb(97, 165, 42);
+  justify-self: center;
+  align-self: center;
+}
+
+.picture-container {
+  background-color: blueviolet;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user-name {
+  grid-area: user-name;
+  background-color: rgb(165, 122, 42);
+  align-self: center;
+}
+
+/* ---------------------------------------Header1 finished--------------- */
+
+/* ---------------------------------------Header2--------------- */
+
+.header2 {
+  background-color: cadetblue;
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr 2fr 2fr;
+  grid-template-areas: "display-picture greetings news upload share";
+}
+
+.display-picture {
+  grid-area: display-picture;
+}
+.greetings {
+  grid-area: greetings;
+  align-self: center;
+}
+
+.news {
+  grid-area: news;
+  align-self: center;
+}
+.upload {
+  grid-area: upload;
+  align-self: center;
+}
+.share {
+  grid-area: share;
+  align-self: center;
+}
+
+button {
+  width: 90px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+}
+.header2 .display-picture .picture-container {
+  width: 60px;
+  height: 60px;
+}
+/* ---------------------------------------Header--------------- */
 .body {
   grid-area: b;
   background-color: grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "p1 p2 a"
+    "p3 p4 a"
+    "p5 p6 t";
+}
+.p1 {
+  grid-area: p1;
+}
+.p2 {
+  grid-area: p2;
+}
+.a {
+  grid-area: a;
+  background-color: aqua;
+}
+.p3 {
+  grid-area: p3;
+}
+.p4 {
+  grid-area: p4;
+}
+.a {
+  grid-area: a;
+}
+.p5 {
+  grid-area: p5;
+}
+.p6 {
+  grid-area: p6;
+}
+.t {
+  background-color: yellow;
+  grid-area: t;
 }
