@@ -45,7 +45,6 @@
 /* ---------------------------------------nav 1--------------- */
 .nav1 {
   grid-area: nav1;
-  /* background-color: rgb(179, 149, 235); */
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -62,7 +61,6 @@
 /* ---------------------------------------nav 2--------------- */
 .nav2 {
   grid-area: nav2;
-  /* background-color: burlywood; */
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -79,8 +77,8 @@
   padding-top: 30px;
 }
 /* ---------------------------------------Dashboard--------------- */
+
 /* ---------------------------------------Header--------------- */
-/*  */
 /* ---------------------------------------Header1--------------- */
 .header {
   grid-area: h;
@@ -329,7 +327,7 @@ button {
   background-color: rgb(255, 255, 255);
 }
 
-.a1 {
+.a1, .a2 {
   padding: 30px;
   padding-bottom: 0;
 }
@@ -340,11 +338,6 @@ button {
   color: rgb(85, 85, 85);
   padding-top: 4px;
   font-size: 11px;
-}
-
-.a2 {
-  padding: 30px;
-  padding-bottom: 0;
 }
 
 .a3 {
@@ -372,11 +365,6 @@ button {
   flex-direction: column;
 }
 
-.t1 {
-  flex-grow: 1;
-  display: flex;
-}
-
 .dp-container {
   background-color: rgb(255, 255, 255);
   height: 67%;
@@ -399,16 +387,8 @@ button {
   border: none;
 }
 
-.t2 {
-  flex-grow: 1;
-  display: flex;
-}
-.t3 {
-  flex-grow: 1;
-  display: flex;
-}
 
-.t4 {
+.t1, .t2, .t3, .t4 {
   flex-grow: 1;
   display: flex;
 }
